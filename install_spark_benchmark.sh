@@ -22,6 +22,7 @@ sudo service mysqld start
 sudo mysqladmin -u root password 'password'
 sudo yum install -y php php-mysql
 
+sudo cp -r monitor /var/www/html/.
 sudo service httpd start
 # </Install ezserver monitor>
 
