@@ -4,7 +4,7 @@ cd
 
 # Clean installation
 rm -rf spark-perf
-rm spark-1.6.1-bin-hadoop2.6.tgz
+rm -f spark-1.6.1-bin-hadoop2.6.tgz
 rm -rf spark-1.6.1-bin-hadoop2.6
 
 
