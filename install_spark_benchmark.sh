@@ -66,8 +66,10 @@ sed -i 's#SPARK_DRIVER_MEMORY = .*#SPARK_DRIVER_MEMORY = "512M"#g' config/config
 
 popd
 
-# Run Spark perf
-bash spark-perf/bin/run
+if [ "$1" == "" ]; then
+  # Run Spark perf
+  bash spark-perf/bin/run
+fi
 
 # grep SPARK_HOME_DIR spark-perf/config/config.py
 # grep SPARK_CLUSTER_URL spark-perf/config/config.py
